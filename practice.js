@@ -3,7 +3,25 @@ function capitalize(string) {
 }
 
 function reverseString(string) {
-  return string.split('').reverse().join('');
+  return string.split("").reverse().join("");
 }
 
-module.exports = {capitalize,reverseString};
+class Calculator {
+  add(a, b) {
+    return a + b;
+  }
+
+  subtract(a, b) {
+    return a - b;
+  }
+
+  multiply(a, b) {
+    return a * b;
+  }
+
+  divide(a, b) {
+    return a / b;
+  }
+}
+
+module.exports = { capitalize, reverseString, Calculator };
