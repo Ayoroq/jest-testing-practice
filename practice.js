@@ -45,4 +45,13 @@ function cipherText(string, shift) {
   return result;
 }
 
-module.exports = { capitalize, reverseString, Calculator, cipherText };
+function analyzeArray(array) {
+    let sum = array.reduce((acc, curr) => acc + curr, 0);
+    let average = sum / array.length;
+    let min = Math.min(...array);
+    let max = Math.max(...array);
+    let length = array.length;
+    return { average, min, max, length };
+}
+
+module.exports = { capitalize, reverseString, Calculator, cipherText, analyzeArray };
